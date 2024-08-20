@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main role="main">
+        <div class="logo">
+            <img src="logo.svg" alt="logo" class="logo">
+        </div>
+        <div class="container">
+            <section class="todo mt-5 mx-auto">
+                <p>
+                    <span>lists</span>
+                </p>
+    
+                <form class="search mb-4" autocomplete="off">
+                    <div class="form-group">
+                        <input class="form-control m-auto text-light" type="text" name="search" placeholder="Search" />
+                    </div>
+                </form>
+    
+                <ul class="todos list-group text-light">
+                    <li class="list-group-item">Learn JS<span class="delete material-icons float-right">delete_outline</span></li>
+                    <li class="list-group-item">Complete a coding challenge<span class="delete material-icons float-right">delete_outline</span></li>
+                    <li class="list-group-item">Contribute to an open-source project<span class="delete material-icons">delete_outline</span></li>
+                    <li class="list-group-item">Refactor a piece of code<span class="delete material-icons">delete_outline</span></li>
+                    <li class="list-group-item">Write unit tests for a function<span class="delete material-icons">delete_outline</span></li>
+                    <li class="list-group-item">Debug the sergv<span class="delete material-icons">delete_outline</span></li>
+                    <li class="list-group-item">Learn BS Algo<span class="delete material-icons">delete_outline</span></li>
+                    <li class="list-group-item">Optimize the sort Fucntion<span class="delete material-icons">delete_outline</span></li>
+                    <li class="list-group-item">Document a piece of code<span class="delete material-icons">delete_outline</span></li>
+                </ul>
+                
+                <form class="add mt-4" autocomplete="off">
+                    <div class="form-group">
+                        <label id= "task-text" rfor="task" class="text-light mb-5">Add a task</label>
+                        <input type="text" class="form-control text-light" id="task" name="task">
+                    </div>
+                </form>
+                <div class="all-btn">
+                    <button class="delete-all">
+                        <span class="material-icons">delete_outline</span>
+                        <span>All</span>
+                    </button>
+
+                </div>
+            </section>
+        </div>
+        </div>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>
